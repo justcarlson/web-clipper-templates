@@ -1,0 +1,83 @@
+{
+	"schemaVersion": "0.1.1",
+	"name": "IMDB",
+	"behavior": "create",
+	"noteNameFormat": "{{schema:name}}",
+	"path": "Clippings",
+	"noteContentFormat": "{{schema:description}}",
+	"properties": [
+		{
+			"name": "categories",
+			"value": "[[Movies]]",
+			"type": "multitext"
+		},
+		{
+			"name": "cover",
+			"value": "{{schema:image}}",
+			"type": "text"
+		},
+		{
+			"name": "genre",
+			"value": "{{schema:genre|wikilink}}",
+			"type": "multitext"
+		},
+		{
+			"name": "director",
+			"value": "{{schema:director[*].name|wikilink}}",
+			"type": "multitext"
+		},
+		{
+			"name": "cast",
+			"value": "{{schema:actor[*].name|slice:0,5|wikilink}}",
+			"type": "multitext"
+		},
+		{
+			"name": "runtime",
+			"value": "{{schema:duration|duration}}",
+			"type": "text"
+		},
+		{
+			"name": "rating",
+			"value": "",
+			"type": "number"
+		},
+		{
+			"name": "year",
+			"value": "{{schema:datePublished|date:YYYY}}",
+			"type": "number"
+		},
+		{
+			"name": "last",
+			"value": "",
+			"type": "date"
+		},
+		{
+			"name": "scoreImdb",
+			"value": "{{schema:aggregateRating.ratingValue}}",
+			"type": "number"
+		},
+		{
+			"name": "imdbId",
+			"value": "{{url|replace:\"/.*\\/(tt\\d+).*/\":\"$1\"}}",
+			"type": "text"
+		},
+		{
+			"name": "via",
+			"value": "IMDB",
+			"type": "text"
+		},
+		{
+			"name": "created",
+			"value": "{{date}}",
+			"type": "date"
+		},
+		{
+			"name": "tags",
+			"value": "movies, to-watch",
+			"type": "multitext"
+		}
+	],
+	"triggers": [
+		"/^https:\\/\\/www\\.imdb\\.com\\/title\\/tt\\d+(?!\\/reference\\/)(\\/[^\\s]*)?$/"
+	]
+}

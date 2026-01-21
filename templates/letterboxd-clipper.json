@@ -1,0 +1,78 @@
+{
+	"schemaVersion": "0.1.1",
+	"name": "Letterboxd",
+	"behavior": "create",
+	"noteNameFormat": "{{selector:.filmtitle}}",
+	"path": "Clippings",
+	"noteContentFormat": "{{description}}",
+	"properties": [
+		{
+			"name": "categories",
+			"value": "[[Movies]]",
+			"type": "multitext"
+		},
+		{
+			"name": "cover",
+			"value": "{{schema:image}}",
+			"type": "text"
+		},
+		{
+			"name": "genre",
+			"value": "{{schema:genre|wikilink}}",
+			"type": "multitext"
+		},
+		{
+			"name": "director",
+			"value": "{{schema:director[*].name|wikilink}}",
+			"type": "multitext"
+		},
+		{
+			"name": "cast",
+			"value": "{{schema:actors[*].name|slice:0,5|wikilink}}",
+			"type": "multitext"
+		},
+		{
+			"name": "runtime",
+			"value": "{{schema:duration|duration}}",
+			"type": "text"
+		},
+		{
+			"name": "rating",
+			"value": "",
+			"type": "number"
+		},
+		{
+			"name": "year",
+			"value": "{{schema:releasedEvent[*].startDate|date:\"YYYY\"}}",
+			"type": "number"
+		},
+		{
+			"name": "last",
+			"value": "",
+			"type": "date"
+		},
+		{
+			"name": "scoreLB",
+			"value": "{{schema:aggregateRating.ratingValue}}",
+			"type": "number"
+		},
+		{
+			"name": "via",
+			"value": "Letterboxd",
+			"type": "text"
+		},
+		{
+			"name": "created",
+			"value": "{{date}}",
+			"type": "date"
+		},
+		{
+			"name": "tags",
+			"value": "movies, to-watch",
+			"type": "multitext"
+		}
+	],
+	"triggers": [
+		"https://letterboxd.com/film/"
+	]
+}

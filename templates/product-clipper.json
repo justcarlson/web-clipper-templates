@@ -1,0 +1,73 @@
+{
+	"schemaVersion": "0.1.1",
+	"name": "Product",
+	"behavior": "create",
+	"noteNameFormat": "{{schema:@Product:name}}",
+	"path": "Clippings",
+	"noteContentFormat": "{{description}}",
+	"properties": [
+		{
+			"name": "categories",
+			"value": "[[Products]]",
+			"type": "multitext"
+		},
+		{
+			"name": "type",
+			"value": "",
+			"type": "multitext"
+		},
+		{
+			"name": "maker",
+			"value": "{{schema:@Product:brand.name|wikilink}}",
+			"type": "multitext"
+		},
+		{
+			"name": "model",
+			"value": "{{schema:@Product:model}}",
+			"type": "text"
+		},
+		{
+			"name": "rating",
+			"value": "",
+			"type": "number"
+		},
+		{
+			"name": "price",
+			"value": "{{schema:@Product:offers.price}}",
+			"type": "number"
+		},
+		{
+			"name": "acquired",
+			"value": "",
+			"type": "date"
+		},
+		{
+			"name": "monthly-uses",
+			"value": "",
+			"type": "number"
+		},
+		{
+			"name": "url",
+			"value": "{{url}}",
+			"type": "text"
+		},
+		{
+			"name": "cover",
+			"value": "{{image}}",
+			"type": "text"
+		},
+		{
+			"name": "created",
+			"value": "{{date}}",
+			"type": "date"
+		},
+		{
+			"name": "tags",
+			"value": "products",
+			"type": "multitext"
+		}
+	],
+	"triggers": [
+		"schema:@Product"
+	]
+}

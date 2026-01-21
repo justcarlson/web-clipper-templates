@@ -2,62 +2,52 @@
 	"schemaVersion": "0.1.0",
 	"name": "YouTube",
 	"behavior": "create",
-	"noteContentFormat": "## About\n\ntype:: #type/video/youtube/new\n\n![{{title}}]({{schema:@VideoObject:embedUrl|replace:\"embed/\":\"watch?v=\"}})\n\n## Description\n\n{{schema:@VideoObject:description}}\n\n## Notes\n\nYT=",
+	"noteNameFormat": "{{schema:author}} – {{schema:name}}",
+	"path": "Clippings",
+	"noteContentFormat": "![{{schema:name}}]({{url}})\n\n## Description\n\n{{schema:@VideoObject:description}}\n\n## Transcript\n\n> [!info] Open the transcript panel on YouTube before clipping to capture the transcript.\n\n{{selectorHtml:ytd-transcript-segment-list-renderer|markdown|replace:\"/^(\\d+:\\d+)\\n\\n/gm\":\"**$1** \"}}",
 	"properties": [
 		{
-			"name": "created",
-			"value": "{{time|date:\\\"YYYY-MM-DDTHH:mm:ssZ\\\"}}",
-			"type": "datetime"
-		},
-		{
-			"name": "reviewed",
-			"value": "",
-			"type": "datetime"
-		},
-		{
-			"name": "url",
-			"value": "{{schema:@VideoObject:embedUrl|replace:\\\"embed/\\\":\\\"watch?v=\\\"}}",
-			"type": "text"
-		},
-		{
-			"name": "title",
-			"value": "{{schema:@VideoObject:name}}",
-			"type": "text"
-		},
-		{
-			"name": "channel",
-			"value": "{{schema:@VideoObject:author}}",
-			"type": "text"
-		},
-		{
-			"name": "related",
+			"name": "categories",
 			"value": "[[Videos]]",
 			"type": "multitext"
 		},
 		{
-			"name": "published",
-			"value": "{{schema:@VideoObject:uploadDate|date:\\\"YYYY-MM-DD\\\"}}",
-			"type": "datetime"
+			"name": "author",
+			"value": "{{schema:author|wikilink}}",
+			"type": "multitext"
 		},
 		{
-			"name": "thumbnailUrl",
-			"value": "{{schema:@VideoObject:thumbnailUrl|first}}",
+			"name": "published",
+			"value": "{{schema:uploadDate|date:YYYY-MM-DD}}",
+			"type": "date"
+		},
+		{
+			"name": "url",
+			"value": "{{url}}",
 			"type": "text"
+		},
+		{
+			"name": "cover",
+			"value": "{{schema:thumbnailUrl|slice:0}}",
+			"type": "text"
+		},
+		{
+			"name": "created",
+			"value": "{{date}}",
+			"type": "date"
 		},
 		{
 			"name": "duration",
-			"value": "{{schema:@VideoObject:duration|replace:\\\"PT\\\",\\\"\\\",\\\"S\\\",\\\"\\\"}}",
+			"value": "{{schema:@VideoObject:duration|duration}}",
 			"type": "text"
 		},
 		{
-			"name": "watched",
-			"value": "",
-			"type": "text"
+			"name": "tags",
+			"value": "videos",
+			"type": "multitext"
 		}
 	],
 	"triggers": [
-		"https://www.youtube.com/watch"
-	],
-	"noteNameFormat": "{{schema:@VideoObject:uploadDate|date:\"YYYY-MM-DD\"}} VIDEO {{schema:@VideoObject:author}} - {{schema:@VideoObject:name|safe_name|trim}}",
-	"path": ""
+		"https://www.youtube.com/watch?v="
+	]
 }
