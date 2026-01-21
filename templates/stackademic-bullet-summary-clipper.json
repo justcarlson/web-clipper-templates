@@ -3,7 +3,7 @@
   "name": "Stackademic - Sectioned Bullet Summary",
   "behavior": "create",
   "noteNameFormat": "{{published|date:\"YYYY-MM-DD\"}} STACK {{title|safe_name}}",
-  "path": "Clips/Articles/Stackademic",
+  "path": "Clippings",
   "context": "{{selectorHtml:article, main, section.meteredContent, .meteredContent, .pw-post-body, .postArticle-content|remove_html:(\"img,aside,script,style,nav,header,footer,form,button\")|markdown|replace:\"/```[\\\\s\\\\S]*?```/g\":\"\"|replace:\"/\\n{3,}/g\":\"\\n\\n\"|replace:\"/\u00A0/g\":\" \"|slice:0,16000|trim}}",
   "properties": [
     { "name": "Title", "value": "{{title}}", "type": "text" },

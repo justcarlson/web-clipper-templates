@@ -69,5 +69,5 @@
 		"https://www.youtube.com/watch?v="
 	],
 	"noteNameFormat": "{{domain}} - {{title|safe_name}} - {{schema:@VideoObject:uploadDate|date:\"YYYY-MM-DD\"}}",
-	"path": "fullsource/webpages/{{domain}}"
+	"path": "Clippings"
 }

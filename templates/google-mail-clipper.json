@@ -49,5 +49,5 @@
 		"https://mail.google.com/mail"
 	],
 	"noteNameFormat": "{{selector:div.adn.ads:not([style*=\"display: none\"]) .gE.iv.gt span.g3?title|first|date:\"YYYY-MM-DD\"}} MAIL {{selector:div.ha:not(:where([style*=\"display: none\"]) *) > h2|safe_name}}",
-	"path": "mail"
+	"path": "Clippings"
 }

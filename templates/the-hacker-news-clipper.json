@@ -44,5 +44,5 @@
 		"https://thehackernews.com/"
 	],
 	"noteNameFormat": "{{selectorHtml:.post-body > meta[itemprop=\"datePublished\"]?content|date:\"YYYY-MM-DD\"}} WEB {{title|safe_name}}",
-	"path": "webclips"
+	"path": "Clippings"
 }

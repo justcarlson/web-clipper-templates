@@ -44,5 +44,5 @@
 		"https://indeed.com"
 	],
 	"noteNameFormat": "{{title|safe_name}}",
-	"path": "{{date|date:\"MM-DD\"}}"
+	"path": "Clippings"
 }

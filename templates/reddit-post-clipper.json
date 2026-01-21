@@ -44,5 +44,5 @@
 		"https://www.reddit.com"
 	],
 	"noteNameFormat": "{{selector:shreddit-post?created-timestamp|date:\"YYYY-MM-DD\"}} REDDIT {{selector:shreddit-post?post-title|trim|safe_name}}",
-	"path": "webclips"
+	"path": "Clippings"
 }

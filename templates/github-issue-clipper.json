@@ -44,5 +44,5 @@
 		"/^https.+github.+issues.+$/"
 	],
 	"noteNameFormat": "{{selector:relative-time?datetime|first|date:\"YYYY-MM-DD\"}} WEB {{title|replace:\"/\":\" - \"|safe_name}}",
-	"path": "webclips"
+	"path": "Clippings"
 }
