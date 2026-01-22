@@ -8,7 +8,7 @@
 	"properties": [
 		{
 			"name": "categories",
-			"value": "[[Clippings]], [[Books]]",
+			"value": "Clippings, Books",
 			"type": "multitext"
 		},
 		{
