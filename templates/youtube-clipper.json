@@ -8,7 +8,7 @@
 	"properties": [
 		{
 			"name": "categories",
-			"value": "{{date|replace:\"/.*/\":\"[[Clippings]],[[Videos]]\"|split:\",\"}}",
+			"value": "{{\"[[Clippings]],[[Videos]]\"|split:\",\"}}",
 			"type": "multitext"
 		},
 		{
