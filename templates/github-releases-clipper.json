@@ -5,6 +5,11 @@
 	"noteContentFormat": "\n#webclip/unread\n\n# {{title}}\n\n{{selectorHtml:.markdown-body|markdown}}",
 	"properties": [
 		{
+			"name": "categories",
+			"value": "[[Clippings]]",
+			"type": "multitext"
+		},
+		{
 			"name": "created",
 			"value": "{{time|date:\\\"YYYY-MM-DDTHH:mm:ssZ\\\"}}",
 			"type": "date"

@@ -5,6 +5,11 @@
 	"noteContentFormat": "## About\n\ntype:: #type/video/youtube/new\n\n![{{title}}]({{schema:@VideoObject:embedUrl|replace:\"embed/\":\"watch?v=\"}})\n\n## Description\n\n{{schema:@VideoObject:description}}\n\n## Notes\n\nYT=\n\n\n## Transcript\n\n{{selectorHtml:.ytd-transcript-segment-list-renderer|first|replace:\"&nbsp;\":\" \"|join|markdown}}",
 	"properties": [
 		{
+			"name": "categories",
+			"value": "[[Videos]]",
+			"type": "multitext"
+		},
+		{
 			"name": "created",
 			"value": "{{time|date:\\\"YYYY-MM-DDTHH:mm:ssZ\\\"}}",
 			"type": "datetime"

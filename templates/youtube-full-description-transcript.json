@@ -5,6 +5,11 @@
 	"noteContentFormat": "\n# {{title}}\n\n![{{schema:name}}]({{url|replace:\"watch?v=\":\"embed/\"}})\n\n{{selectorHtml:#description-inline-expander|remove_html:(\"#structured-description, #snippet, tp-yt-paper-button\")|strip_tags|callout:(\"summary\",\"Description\",true)}}\n\n{{selectorHtml:ytd-engagement-panel-section-list-renderer[visibility$=\\\"EXPANDED\\\"] #segments-container|remove_html:(\"ytd-transcript-section-header-renderer, dom-if\")|strip_tags:(\"yt-formatted-string, yt-img-shadow, ytd-transcript-segment-renderer\")|join|markdown|callout:(\"transcript\",\"Transcript (Youtube)\",true)}}",
 	"properties": [
 		{
+			"name": "categories",
+			"value": "[[Videos]]",
+			"type": "multitext"
+		},
+		{
 			"name": "type",
 			"value": "youtube",
 			"type": "text"

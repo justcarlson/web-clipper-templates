@@ -7,6 +7,11 @@
   "context": "{{selectorHtml:article|remove_html:(\"img,aside,script,style,nav,header,footer\")|markdown|replace:\"/```[\\\\s\\\\S]*?```/g\":\"\"|replace:\"/\\n{3,}/g\":\"\\n\\n\"|slice:0,8000|trim}}",
   "properties": [
     {
+      "name": "categories",
+      "value": "[[Clippings]]",
+      "type": "multitext"
+    },
+    {
       "name": "Title",
       "value": "{{title}}",
       "type": "text"

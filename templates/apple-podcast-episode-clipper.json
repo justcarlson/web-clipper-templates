@@ -5,6 +5,11 @@
 	"noteContentFormat": "\n#podcast/backlog\n\n# {{schema:@PodcastEpisode:name}}\n\n{{schema:@PodcastEpisode:thumbnailUrl|image:\"thumbnail|200\"}}\n\n## Description\n\n{{schema:@PodcastEpisode:description}}\n\n## Notes\n\n",
 	"properties": [
 		{
+			"name": "categories",
+			"value": "[[Podcast episodes]]",
+			"type": "multitext"
+		},
+		{
 			"name": "created",
 			"value": "{{time|date:\\\"YYYY-MM-DDTHH:mm:ssZ\\\"}}",
 			"type": "datetime"

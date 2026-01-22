@@ -5,6 +5,11 @@
 	"noteContentFormat": "## Job Details\n**Pay:** {{selector:div.js-match-insights-provider-1m98ica.e1xnxm2i0|first}}\n**Benefits:**\n{{selector:li.css-kyg8or.eu4oa1w0|list}}\n\n## Full Job Description\n{{content}}",
 	"properties": [
 		{
+			"name": "categories",
+			"value": "[[Clippings]]",
+			"type": "multitext"
+		},
+		{
 			"name": "title",
 			"value": "{{title|safe_name}}",
 			"type": "text"

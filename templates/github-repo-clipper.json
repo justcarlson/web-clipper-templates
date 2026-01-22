@@ -5,6 +5,11 @@
 	"noteContentFormat": "## README\n\n{{selectorHtml:article|markdown}}\n\n",
 	"properties": [
 		{
+			"name": "categories",
+			"value": "[[Clippings]]",
+			"type": "multitext"
+		},
+		{
 			"name": "title",
 			"value": "{{selector:#repo-title-component a}}",
 			"type": "text"
