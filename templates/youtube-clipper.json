@@ -2,13 +2,11 @@
 	"schemaVersion": "0.1.0",
 	"name": "YouTube",
 	"behavior": "create",
-	"noteNameFormat": "{{schema:author}} – {{schema:name}}",
-	"path": "Clippings",
 	"noteContentFormat": "![{{schema:name}}]({{url}})\n\n## Description\n\n{{schema:@VideoObject:description}}\n\n## Transcript\n\n> [!info] Open the transcript panel on YouTube before clipping to capture the transcript.\n\n{{selectorHtml:ytd-transcript-segment-list-renderer|markdown|replace:\"/^(\\d+:\\d+)\\n\\n/gm\":\"**$1** \"}}",
 	"properties": [
 		{
 			"name": "categories",
-			"value": "{{\"[[Clippings]],[[Videos]]\"|split:\",\"}}",
+			"value": "Clippings,Videos",
 			"type": "multitext"
 		},
 		{
@@ -49,5 +47,7 @@
 	],
 	"triggers": [
 		"https://www.youtube.com/watch?v="
-	]
+	],
+	"noteNameFormat": "{{schema:author}} – {{schema:name}}",
+	"path": "Clippings"
 }
