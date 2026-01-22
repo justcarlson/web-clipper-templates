@@ -8,7 +8,7 @@
 	"properties": [
 		{
 			"name": "categories",
-			"value": "{{\"Clippings, Recipes\"|split:\", \"|wikilink}}",
+			"value": "[[Clippings]]\n[[Recipes]]",
 			"type": "multitext"
 		},
 		{
