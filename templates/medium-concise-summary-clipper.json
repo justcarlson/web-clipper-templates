@@ -8,7 +8,7 @@
   "properties": [
     {
       "name": "categories",
-      "value": "[[Clippings]]",
+      "value": "Clippings|wikilink",
       "type": "multitext"
     },
     {

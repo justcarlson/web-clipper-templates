@@ -6,7 +6,7 @@
 	"properties": [
 		{
 			"name": "categories",
-			"value": "[[Clippings]]\n[[Podcast episodes]]",
+			"value": "Clippings, Podcast episodes|split:\", \"|wikilink",
 			"type": "multitext"
 		},
 		{
