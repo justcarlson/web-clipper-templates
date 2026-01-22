@@ -6,7 +6,7 @@
 	"properties": [
 		{
 			"name": "categories",
-			"value": "Clippings, Videos|split:\", \"|wikilink",
+			"value": "{{\"Clippings, Videos\"|split:\", \"|wikilink}}",
 			"type": "multitext"
 		},
 		{

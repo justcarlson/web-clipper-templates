@@ -8,7 +8,7 @@
 	"properties": [
 		{
 			"name": "categories",
-			"value": "Clippings, Movies|split:\", \"|wikilink",
+			"value": "{{\"Clippings, Movies\"|split:\", \"|wikilink}}",
 			"type": "multitext"
 		},
 		{
