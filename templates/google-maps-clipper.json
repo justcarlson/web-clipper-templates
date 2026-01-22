@@ -8,7 +8,7 @@
 	"properties": [
 		{
 			"name": "categories",
-			"value": "Clippings, Places",
+			"value": "Clippings\nPlaces",
 			"type": "multitext"
 		},
 		{

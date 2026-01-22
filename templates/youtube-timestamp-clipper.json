@@ -6,7 +6,7 @@
 	"properties": [
 		{
 			"name": "categories",
-			"value": "Clippings, Videos",
+			"value": "Clippings\nVideos",
 			"type": "multitext"
 		}
 	],
