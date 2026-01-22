@@ -8,7 +8,7 @@
 	"properties": [
 		{
 			"name": "categories",
-			"value": "Clippings\nRecipes",
+			"value": "[[Clippings]]\n[[Recipes]]",
 			"type": "multitext"
 		},
 		{

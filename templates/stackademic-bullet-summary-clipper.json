@@ -6,7 +6,7 @@
   "path": "Clippings",
   "context": "{{selectorHtml:article, main, section.meteredContent, .meteredContent, .pw-post-body, .postArticle-content|remove_html:(\"img,aside,script,style,nav,header,footer,form,button\")|markdown|replace:\"/```[\\\\s\\\\S]*?```/g\":\"\"|replace:\"/\\n{3,}/g\":\"\\n\\n\"|replace:\"/\u00A0/g\":\" \"|slice:0,16000|trim}}",
   "properties": [
-    { "name": "categories", "value": "Clippings", "type": "multitext" },
+    { "name": "categories", "value": "[[Clippings]]", "type": "multitext" },
     { "name": "Title", "value": "{{title}}", "type": "text" },
     { "name": "Source", "value": "{{url}}", "type": "text" },
     { "name": "Site", "value": "{{site}}", "type": "text" },
