@@ -8,7 +8,7 @@
 	"properties": [
 		{
 			"name": "categories",
-			"value": "[[Clippings]]\n[[Videos]]",
+			"value": "{{\"[[Clippings]]\"|merge:\"[[Videos]]\"}}",
 			"type": "multitext"
 		},
 		{
