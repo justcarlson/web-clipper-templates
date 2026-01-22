@@ -8,7 +8,7 @@
 	"properties": [
 		{
 			"name": "categories",
-			"value": "[[Movies]]",
+			"value": "[[Clippings]], [[Movies]]",
 			"type": "multitext"
 		},
 		{
