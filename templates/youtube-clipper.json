@@ -2,7 +2,7 @@
 	"schemaVersion": "0.1.0",
 	"name": "YouTube",
 	"behavior": "create",
-	"noteContentFormat": "![{{schema:name}}]({{url}})\n\n## Description\n\n{{schema:@VideoObject:description}}\n\n## Transcript\n\n> [!info] Open the transcript panel on YouTube before clipping to capture the transcript.\n\n{{selectorHtml:ytd-transcript-segment-list-renderer|markdown|replace:\"/^(\\d+:\\d+)\\n\\n/gm\":\"**$1** \"}}",
+	"noteContentFormat": "![{{schema:name}}]({{url}})\n\n## Description\n\n{{schema:@VideoObject:description}}\n\n## Transcript\n\n> [!info] Open the transcript panel on YouTube before clipping to capture the transcript.\n\n{{selectorHtml:ytd-engagement-panel-section-list-renderer[visibility$=\"EXPANDED\"] #segments-container|strip_tags:\"h2,ytd-transcript-segment-renderer\"|replace:\"ytd-transcript-segment-renderer\":\"li\"|markdown}}",
 	"properties": [
 		{
 			"name": "categories",
