@@ -42,6 +42,11 @@
 			"type": "date"
 		},
 		{
+			"name": "consumed",
+			"value": "false",
+			"type": "checkbox"
+		},
+		{
 			"name": "tags",
 			"value": "clippings, arxiv, papers",
 			"type": "multitext"

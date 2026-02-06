@@ -20,6 +20,11 @@
 			"type": "datetime"
 		},
 		{
+			"name": "consumed",
+			"value": "false",
+			"type": "checkbox"
+		},
+		{
 			"name": "tags",
 			"value": "podcasts, episode",
 			"type": "multitext"

@@ -15,6 +15,7 @@
     { "name": "Created", "value": "{{date|date:\"YYYY-MM-DD\"}}", "type": "date" },
     { "name": "Words", "value": "{{words}}", "type": "number" },
     { "name": "Reading time (min)", "value": "{{words|calc:\"/238\"|round}}", "type": "number" },
+    { "name": "consumed", "value": "false", "type": "checkbox" },
     { "name": "tags", "value": "{{selector:a[href^=\"/tag/\"], a[href*=\"medium.com/tag/\"], a[aria-label^=\"Tag:\"]|replace:(\" \":\"-\")}}", "type": "multitext" }
   ],
   "triggers": [

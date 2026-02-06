@@ -52,6 +52,11 @@
       "type": "number"
     },
     {
+      "name": "consumed",
+      "value": "false",
+      "type": "checkbox"
+    },
+    {
       "name": "tags",
       "value": "{{selector:a[href^=\"/tag/\"] > div|replace:(\" \":\"-\")}}",
       "type": "multitext"

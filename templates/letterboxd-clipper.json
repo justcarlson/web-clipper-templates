@@ -67,8 +67,13 @@
 			"type": "date"
 		},
 		{
+			"name": "consumed",
+			"value": "false",
+			"type": "checkbox"
+		},
+		{
 			"name": "tags",
-			"value": "movies, to-watch",
+			"value": "movies",
 			"type": "multitext"
 		}
 	],

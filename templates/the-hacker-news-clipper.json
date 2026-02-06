@@ -43,6 +43,16 @@
 			"name": "description",
 			"value": "{{description}}",
 			"type": "text"
+		},
+		{
+			"name": "consumed",
+			"value": "false",
+			"type": "checkbox"
+		},
+		{
+			"name": "tags",
+			"value": "clippings",
+			"type": "multitext"
 		}
 	],
 	"triggers": [

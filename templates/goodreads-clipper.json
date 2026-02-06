@@ -67,8 +67,13 @@
 			"type": "text"
 		},
 		{
+			"name": "consumed",
+			"value": "false",
+			"type": "checkbox"
+		},
+		{
 			"name": "tags",
-			"value": "books, to-read",
+			"value": "books",
 			"type": "multitext"
 		}
 	],

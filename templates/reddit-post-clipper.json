@@ -25,6 +25,11 @@
 			"type": "text"
 		},
 		{
+			"name": "consumed",
+			"value": "false",
+			"type": "checkbox"
+		},
+		{
 			"name": "tags",
 			"value": "source/reddit",
 			"type": "text"
