@@ -1,0 +1,61 @@
+{
+	"schemaVersion": "0.1.0",
+	"name": "Article",
+	"behavior": "create",
+	"noteNameFormat": "{{\"What is the title of this article? Return ONLY the title, no other text.\"|safe_name}}",
+	"path": "Clippings",
+	"context": "{{selectorHtml:body|remove_html:(\"img,script,style,svg,path,link,noscript,iframe,video,audio,canvas,form,input,button\")|markdown|slice:0,8000|trim}}",
+	"properties": [
+		{
+			"name": "categories",
+			"value": "Articles",
+			"type": "multitext"
+		},
+		{
+			"name": "author",
+			"value": "{{\"Who is the author of this article? Return ONLY their full name, no other text.\"|wikilink}}",
+			"type": "multitext"
+		},
+		{
+			"name": "url",
+			"value": "{{url}}",
+			"type": "text"
+		},
+		{
+			"name": "created",
+			"value": "{{date|date:\"YYYY-MM-DD\"}}",
+			"type": "date"
+		},
+		{
+			"name": "consumed",
+			"value": "false",
+			"type": "checkbox"
+		},
+		{
+			"name": "published",
+			"value": "{{\"What date was this article published? Return ONLY the date, no other text.\"|date:\"YYYY-MM-DD\"}}",
+			"type": "date"
+		},
+		{
+			"name": "rating",
+			"value": "",
+			"type": "number"
+		},
+		{
+			"name": "topics",
+			"value": "",
+			"type": "multitext"
+		},
+		{
+			"name": "via",
+			"value": "",
+			"type": "text"
+		}
+	],
+	"triggers": [
+		"schema:@Article",
+		"schema:@BlogPosting",
+		"schema:@NewsArticle"
+	],
+	"noteContentFormat": "# {{\"What is the title of this article? Return ONLY the title, no other text.\"}}\n\n## Summary\n{{\"Based solely on the provided context, write ONE paragraph (70-110 words). No headings, no lists, no bullets, no tables, no code blocks. Plain text. ASCII only. Do not include surrounding quotes.\"|strip_tags|strip_md|replace:\"/\\s+/g\":\" \"|trim}}\n\n## Key points\n{{\"Based solely on the provided context, return 3-6 key points as a Markdown list. Each on its own line, prefixed exactly with '- ', 6-12 words, non-overlapping, no trailing punctuation. ASCII only. Do not include surrounding quotes.\"|strip_tags|replace:\"/^(?:\\*|•|—|–|\\d+\\.|\\d+\\))\\s*/gm\":\"- \"|trim}}\n\n## Notes\n\n"
+}
